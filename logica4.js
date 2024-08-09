@@ -21,7 +21,7 @@ en la consola; de lo contrario el numero no es primo, se imprime este mensaje en
 let numeroDado= 20;
 let ciclo=1;
 let exactas=0;
-
+let variable= 4; 
 while( ciclo<=numeroDado){
     if(numeroDado%ciclo==0){
         exactas= exactas+1
