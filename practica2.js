@@ -455,3 +455,27 @@ split retorna un arreglo con la nueva cadena dividida o las sub cadenas
 
  let ordenar= reversa.join(); 
 console.log(ordenar);
+
+//BUCLE FOR OF Y FOR IN: 
+
+/*bucle for of: permite recorrer los elementos de una coleccion
+de manera sencilla y directa*/
+const Lista= [1, 2, 3, 4, 5];
+
+for(const elemento of Lista){
+    console.log(elemento);
+}
+/*de esta forma el bucle itera sobre cada elemento del array
+y los imprime en la consola */
+
+/*Es importante no confundir FOR...OF con FOR...IN mientras
+que for of itera sobre los valores de una coleccion, for in itera sobre
+las propiedades enumerables de un objeto. */
+
+/*bucle for in: permite iterar sobre las propiedades de un objeto */
+
+const objeto= { a: 1, b: 2, c: 3,};
+
+for(const propiedad in objeto){
+    console.log(propiedad);
+}
