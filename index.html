@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contactos</title>
+    <script>
+        function agenda (){
+    let contactos = new Map()
+    let opciones = prompt("elige las acciones a ejecutar: 1:buscar, 2:crear, 3:actualizar, 4:eliminar, 5:salir ")
+
+    switch(opciones){
+        case 1: 
+        
+        case 2 :
+            let name = prompt("introduce el nombre: ");
+            let phone =prompt("introduce el telefono:");
+
+            if(name !=String){
+                alert("el nombre no debe contener caracteres especiales"); 
+
+            }else{
+                contactos.set(nonmbre, name);
+            }
+            if(phone !=number){
+                alert("el numero de telefono solo puede contener numeros enteros");
+
+            }else if(phone.length>=11){
+                alert("el numero de telefono no puede superar los 11 digitos");
+            }else{
+                contactos.set(telefono, phone); 
+            }
+        case 3:
+        case 4:
+        case 5:
+        alert("saliendo de la ejecucion del programa");
+    }
+
+}
+agenda();
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

@@ -69,7 +69,7 @@ console.log(resultado);
 //varaibles globales: /*se puede acceder a ella desde cualquier lugar 
 // del documento  */
 var myName = "Carolina"; 
-//vsriable local: /* solo se puede acceder desde el mismo contesto 
+//vsriable local: /* solo se puede acceder desde el mismo contexto 
 // en el que se declara */
 let miNombre ="CarolinaAD";
 
@@ -89,27 +89,18 @@ si el numero resulta ser multiplo de 3 y tambien de 5, retornar ambos
 textos concatenados, impormir tambien al final de la ejecucion, el total de numeros
 escritos. */
 
-function return_number (a, b){
-
-    let cont = 0;
-for( let i = 1; i<=100; i++){
-   
-    if(i%3 ==0 && i%5==0){
-        console.log(a + b);
+function FizzBuzz (a, b){
+    for(let i=0; i<=100; i++){
+        if(i%3==0 && i%5==0){
+            console.log(a+b);
+        }
+        else if(i%5==0){
+            console.log(b);
+        }
+        else if(i%3==0){
+            console.log(a);
+        }
     }
-     else if(i%3==0){
-    console.log(a);
-    } else if(i%5==0){
-        console.log(b);
-    }else{
-        console.log(i);
-        cont+=1;
-
-      
-    }
-  
-    }
-console.log("total numeros escritos: " + cont);
-
 }
-return_number("fizz ", "buzz");
+let pruebas = FizzBuzz("Fizz", "Buzz");
+console.log(pruebas);
