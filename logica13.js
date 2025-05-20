@@ -3,8 +3,8 @@
 /*VARIABLES Y TIPOS DE DATOS: */
 let numero = 3;
 let texto="hola mundo";
-let verdadero = "true";
-let falso= "false";
+let verdadero = true;
+let falso= false;
 let decimal= 1.345656;
 let entero_grande= 233456789876543;
 
